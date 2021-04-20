@@ -1,0 +1,24 @@
+.input {
+    background-color: #616161;
+    border: none;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: #989898;
+    }
+
+    @media screen and (max-width: 890px) {
+        width: 135px;
+    }
+
+    @media screen and (max-width: 665px) {
+        width: 100%;
+    }
+}

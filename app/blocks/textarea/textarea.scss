@@ -1,0 +1,20 @@
+.textarea {
+    width: 310px;
+    height: 100px;
+    background-color: #616161;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 15px;
+    resize: none;
+
+    &::placeholder {
+        color: #989898;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
+}

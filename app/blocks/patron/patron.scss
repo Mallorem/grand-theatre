@@ -1,0 +1,63 @@
+.patron {
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1195px) {
+            justify-content: center;
+        }
+    }
+
+    &__contacts {
+        list-style: none;
+
+        @media screen and (max-width: 1195px) {
+            order: 2;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 478px) {
+            flex-direction: column;
+        }
+    }
+
+    &__phone-list {
+        list-style: none;
+
+        @media screen and (max-width: 478px) {
+            text-align: center;
+        }
+    }
+
+    &__adress-list {
+        list-style: none;
+
+        @media screen and (max-width: 1195px) {
+            text-align: right;
+        }
+
+        @media screen and (max-width: 478px) {
+            text-align: center;
+        }
+    }
+
+    &__contact {
+        font-family: "Open Sans Condensed";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: #fff;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}

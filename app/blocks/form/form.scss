@@ -1,0 +1,56 @@
+.form {
+    display: grid;
+    grid-template-areas: "input1 input2 textarea" "input3 input4 textarea" "sign sign button";
+    grid-template-columns: repeat(2, 180px) 1fr;
+    grid-gap: 30px;
+    max-width: 100%;
+
+    @media screen and (max-width: 890px) {
+        grid-template-columns: repeat(2, 135px) 1fr;
+    }
+
+    @media screen and (max-width: 665px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "input1 input2" "input3 input4" "textarea textarea" "button button" "sign sign";
+    }
+
+    &__textarea {
+        grid-area: textarea;
+    }
+
+    &__sign {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #989898;
+        max-width: 390px;
+        grid-area: sign;
+    }
+
+    &__btn {
+        margin-left: auto;
+        grid-area: button;
+
+        @media screen and (max-width: 665px) {
+            margin: auto;
+        }
+    }
+
+    &__field {
+        &_for_name {
+            grid-area: input1;
+        }
+
+        &_for_phone {
+            grid-area: input2;
+        }
+
+        &_for_company {
+            grid-area: input3;
+        }
+
+        &_for_email {
+            grid-area: input4;
+        }
+    }
+}

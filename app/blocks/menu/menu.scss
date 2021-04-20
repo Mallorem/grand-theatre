@@ -1,0 +1,38 @@
+.menu {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        @media screen and (max-width: 1070px) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        white-space: nowrap;
+
+        @media screen and (max-width: 992px) {
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        font-family: "Open Sans Condensed";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        transition: color .4s;
+
+        &:hover {
+            color: #d1a954;
+        }
+    }
+}
