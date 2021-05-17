@@ -6,7 +6,7 @@
     max-width: 100%;
 
     @media screen and (max-width: 890px) {
-        grid-template-columns: repeat(2, 135px) 1fr;
+        grid-template-columns: 135px 135px 1fr;
     }
 
     @media screen and (max-width: 665px) {
